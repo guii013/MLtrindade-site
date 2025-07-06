@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #222;
+  }
+  
+  :root {
+    --azul: #0077cc;
+    --amarelo: #ffcc00;
+  }
+  
+  .cabecalho {
+    background: var(--azul);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .cabecalho h1 {
+    font-size: 2.5rem;
+  }
+  
+  .cabecalho p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  section {
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    color: var(--azul);
+    margin-bottom: 1rem;
+  }
+  
+  .sobre p {
+    font-size: 1.1rem;
+  }
+  
+  .galeria .fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .galeria img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid var(--amarelo);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .galeria img:hover {
+    transform: scale(1.05);
+  }
+  
+  .mapa-img {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid var(--azul);
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .mapa-img:hover {
+    box-shadow: 0 0 12px rgba(0, 119, 204, 0.5);
+  }
+  
+  .botoes-contato {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .botoes-contato a {
+    text-decoration: none;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .whatsapp {
+    background-color: #25d366;
+  }
+  
+  .whatsapp:hover {
+    background-color: #1ebe57;
+  }
+  
+  .instagram {
+    background-color: #E1306C;
+  }
+  
+  .instagram:hover {
+    background-color: #c42e5e;
+  }
+  
+  .rodape {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--azul);
+    color: white;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .galeria .fotos img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .botoes-contato {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .videos {
+    text-align: center;
+  }
+  
+  .videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .videos-container video {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .videos-container video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  }
+  
+  .servicos {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  .servicos h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #003366; /* Azul escuro do tema */
+  }
+  
+  .botoes-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .botoes-servicos button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  .btn-chaveiro {
+    background-color: rgba(0, 119, 204, 0.5); /* Azul escuro */
+  }
+  
+  .btn-carreto {
+    background-color: rgba(0, 119, 204, 0.5); /* Amarelo tema */
+    color: #003366;
+  }
+  
+  .btn-materiais {
+    background-color: rgba(0, 119, 204, 0.5); /* Azul intermediário */
+  }
+  
+  .botoes-servicos button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+
+  .botoes-servicos button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-chaveiro {
+    background-color: #003366;
+  }
+  
+  .btn-carreto {
+    background-color: #ffcc00;
+    color: #003366;
+  }
+  
+  .btn-materiais {
+    background-color: #0055aa;
+  }
+  
+  .botoes-servicos button:hover {
+    transform: scale(1.05);
+    opacity: 0.95;
+  }
+  
